@@ -1,0 +1,124 @@
+.facility-page .section-title{
+  text-align: center;
+}
+
+.facility-title{
+  background-image: url("../img2/共用部/26.JPG");
+  background-position: 50% 60%;
+}
+.facility-page .section-title::after{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.facility-item:not(:last-of-type){
+  margin-bottom: 80px;
+}
+
+.facility-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.facility-list img{
+  height: 300px;
+  object-fit: cover;
+}
+.facility-list .fa-title{
+  font-size: 16px;
+}
+.facility-list p{
+  line-height: 1.1;
+  font-size: 14px;
+}
+.facility-1,.facility-2,.facility-3,#fa-1{
+  margin-bottom: 120px;
+}
+.facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.fa1-1{
+  margin-bottom: 80px;
+}
+.facility-list2{
+  display:grid ;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.fa1-1 .title-label{
+  margin-bottom: 10px;
+}
+.fa1-1 p{
+  margin-bottom: 10px;
+}
+.fa1-1 img{
+  height: 300px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 960px) {
+  .facility-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  
+
+  .facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-size: 20px;
+  }
+  .facility1-title{
+    font-size: 20px;
+  }
+  .facility-1,.facility-2,.facility-3,#fa-1{
+    margin-bottom: 80px;
+  }
+  .facility-list2{
+    grid-template-columns: 1fr;
+  }
+  .facility-list2:not(:last-of-type){
+  margin-bottom: 15px;
+  }
+  .fa1-1 img{
+    width: 80%;
+    height: 250px;
+  }
+  .facility-list2 .fa1-1-img2{
+    width: 80%; /* サイズを80%に保つ */
+    height: 250px; /* 高さを固定 */
+    object-fit: cover; /* 画像の比率を維持 */
+    margin-left: auto; /* 右寄せ */
+    margin-right: 0; /* 左右の余白を調整 */
+  }
+  .facility-list2 .fa1-1-img2 img{
+    width: 100%;
+  }
+
+}
+@media (max-width:500px){
+  .facility-list{
+    grid-template-columns: 1fr;
+  }
+  .facility-list img{
+    height: 250px;
+  }
+  .facility-list p{
+    font-size: 13px;
+  }
+
+  .fa1-1 img{
+    height: 200px;
+  }
+  .facility-list2 .fa1-1-img2{
+    height: 200px;
+  }
+}
