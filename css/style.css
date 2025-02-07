@@ -436,20 +436,7 @@ footer{
 .f-nav li a:hover{
   color: #9B6F68;
 }
-.f-link{
-  text-align: center;
-}
-.f-link h3{
-  font-size: 28px;
-  line-height: 1;
-}
-.f-link-span{
-  font-size: 18px;
-}
-.f-link a{
-  font-size: 18px;
-  color: #9B6F68;
-}
+
 .footer-inner{
   display: flex;
   justify-content:space-between;
@@ -498,7 +485,20 @@ footer{
   background: #B2967D;
   color: #fdfdfd;
 }
-
+.f-link{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.f-link li{
+  margin: 0 20px;
+}
+.f-link li a{
+  display: block;
+}
+.f-link img{
+  width: 36px;
+}
 .copy-right{
   text-align: center;
   font-size: 12px;
@@ -978,15 +978,7 @@ object-position: 44% 90%;
 
 
 /*footer*/
-.f-link h3{
-  font-size: 24px;
-}
-.f-link-span{
-  font-size: 16px;
-}
-.f-link a{
-  font-size: 16px;
-}
+
 .f-nav li{
   padding: 0 10px;
 }
@@ -1006,6 +998,7 @@ object-position: 44% 90%;
 .copy-right{
   font-size: 10px;
 }
+
 }
 
 
@@ -1333,6 +1326,13 @@ object-position: 44% 90%;
 
 .footer-inner {
   margin: 20px 0;
+}
+.f-link li{
+  margin: 0 15px;
+}
+
+.f-link img{
+  width: 30px;
 }
 }
 
